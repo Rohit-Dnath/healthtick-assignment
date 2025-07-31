@@ -60,7 +60,7 @@ export const BookingCard: React.FC<BookingCardProps> = ({
       {/* Delete Button */}
       <button
         onClick={onDelete}
-        className="absolute right-2 top-2 rounded-full bg-white/80 p-1 sm:p-1.5 opacity-0 shadow-sm transition-all duration-200 hover:bg-red-50 hover:text-red-600 group-hover:opacity-100"
+        className="absolute right-2 top-2 rounded-full bg-white/80 p-1 sm:p-1.5 opacity-0 shadow-sm transition-all duration-200 hover:bg-red-50 hover:text-red-600 group-hover:opacity-100 cursor-pointer"
         title="Delete booking"
       >
         <svg className="h-3 w-3 sm:h-3.5 sm:w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -65,7 +65,7 @@ export const TimeSlot: React.FC<TimeSlotProps> = ({
   return (
     <button
       onClick={onClick}
-      className="group relative w-full overflow-hidden rounded-lg border border-slate-200 bg-white p-3 sm:p-4 shadow-sm transition-all duration-200 hover:border-healthtick-300 hover:shadow-md hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-healthtick-500 focus:ring-offset-2"
+      className="group relative w-full overflow-hidden rounded-lg border border-slate-200 bg-white p-3 sm:p-4 shadow-sm transition-all duration-200 hover:border-healthtick-300 hover:shadow-md hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-healthtick-500 focus:ring-offset-2 cursor-pointer"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-healthtick-50 to-healthtick-100 opacity-0 transition-opacity duration-200 group-hover:opacity-100"></div>
       
