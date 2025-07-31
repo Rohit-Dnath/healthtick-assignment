@@ -272,6 +272,7 @@ Firestore automatically creates indexes for:
 - `npm run build` - Build for production
 - `npm run lint` - Run ESLint
 - `npm run preview` - Preview production build locally
+- `node clear-database.js` - Clear all bookings from Firestore database
 
 ### Code Quality
 
