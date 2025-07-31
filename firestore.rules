@@ -1,0 +1,16 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow read and write access to bookings collection
+    // Test mode rules - allows all access for development
+    match /bookings/{document} {
+      allow read, write: if true;
+    }
+    
+    // Allow read and write access to all documents for testing
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
