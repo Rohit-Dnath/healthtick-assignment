@@ -281,25 +281,4 @@ Firestore automatically creates indexes for:
 - **Error Handling**: User-friendly error messages
 - **Loading States**: Visual feedback during async operations
 
-## Future Enhancements
 
-- [ ] Multiple coach support
-- [ ] Email/SMS notifications
-- [ ] Calendar export (ICS)
-- [ ] Client notes and history
-- [ ] Advanced recurring patterns
-- [ ] Timezone support
-- [ ] Mobile app
-- [ ] Integration with external calendars
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
