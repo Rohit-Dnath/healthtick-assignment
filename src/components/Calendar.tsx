@@ -325,6 +325,15 @@ export const Calendar: React.FC = () => {
               </div>
             )}
 
+            {/* Compact Empty State Message */}
+            {timeSlots.every(slot => slot.available) && !loading && (
+              <div className="mb-4 text-center py-3 bg-slate-50 rounded-lg border border-slate-200">
+                <p className="text-sm text-slate-600">
+                  <span className="font-medium text-slate-700">No appointments today</span> • Click on any time slot to schedule a call
+                </p>
+              </div>
+            )}
+
             {/* Time Slots Grid - Improved responsive breakpoints */}
             <div className="grid grid-cols-1 gap-2 xs:grid-cols-2 sm:grid-cols-2 sm:gap-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
               {timeSlots.map((slot) => (
@@ -347,19 +356,6 @@ export const Calendar: React.FC = () => {
                 </div>
               ))}
             </div>
-
-            {/* Empty State */}
-            {timeSlots.every(slot => slot.available) && !loading && (
-              <div className="flex flex-col items-center justify-center py-12 sm:py-16 text-center">
-                <div className="mb-3 sm:mb-4 rounded-full bg-slate-100 p-2 sm:p-3">
-                  <svg className="h-6 w-6 sm:h-8 sm:w-8 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <h3 className="text-base sm:text-lg font-medium text-slate-900">No appointments today</h3>
-                <p className="mt-1 sm:mt-2 text-sm sm:text-base text-slate-600">Click on any time slot to schedule a call</p>
-              </div>
-            )}
           </div>
         </div>
       </main>
