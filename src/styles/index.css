@@ -1,5 +1,66 @@
 @import "tailwindcss";
 
+/* React DatePicker Custom Styles */
+.react-datepicker {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  font-family: inherit;
+}
+
+.react-datepicker__header {
+  background-color: white;
+  border-bottom: 1px solid #e2e8f0;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.react-datepicker__current-month {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.react-datepicker__day-name {
+  color: #475569;
+  font-weight: 500;
+}
+
+.react-datepicker__day {
+  color: #334155;
+  border-radius: 0.5rem;
+}
+
+.react-datepicker__day:hover {
+  background-color: #f1f5f9;
+}
+
+.react-datepicker__day--selected {
+  background-color: #507626 !important;
+  color: white !important;
+}
+
+.react-datepicker__day--selected:hover {
+  background-color: #456521 !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+.react-datepicker__navigation {
+  color: #475569;
+}
+
+.react-datepicker__navigation:hover {
+  color: #0f172a;
+}
+
+.react-datepicker__triangle {
+  border-bottom-color: #e2e8f0;
+}
+
 /* Custom CSS Variables for Design System */
 :root {
   --background: 0 0% 100%;
@@ -79,4 +140,64 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--foreground));
+}
+
+/* DatePicker Custom Styles */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+}
+
+.react-datepicker {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+}
+
+.react-datepicker__header {
+  background-color: #507626;
+  border-bottom: 1px solid #456521;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.react-datepicker__current-month {
+  color: white;
+  font-weight: 600;
+}
+
+.react-datepicker__navigation--previous,
+.react-datepicker__navigation--next {
+  top: 12px;
+}
+
+.react-datepicker__navigation--previous {
+  border-right-color: white;
+}
+
+.react-datepicker__navigation--next {
+  border-left-color: white;
+}
+
+.react-datepicker__day-name {
+  color: #507626;
+  font-weight: 600;
+}
+
+.react-datepicker__day--selected {
+  background-color: #507626;
+  color: white;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #456521;
+  color: white;
+}
+
+.react-datepicker__day:hover {
+  background-color: #e8efdd;
+  color: #507626;
 }
