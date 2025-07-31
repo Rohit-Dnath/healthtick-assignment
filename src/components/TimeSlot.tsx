@@ -26,8 +26,8 @@ export const TimeSlot: React.FC<TimeSlotProps> = ({
 
   if (!available) {
     return (
-      <div className="relative overflow-hidden rounded-lg border border-slate-200 bg-slate-50 p-3 sm:p-4 opacity-60">
-        <div className="flex items-center justify-between">
+      <div className="relative overflow-hidden rounded-lg border border-slate-200 bg-slate-50 p-3 sm:p-4 opacity-60 h-20 sm:h-24">
+        <div className="flex items-center justify-between h-full">
           <div>
             <div className="text-xs sm:text-sm font-medium text-slate-500">{formatTime(time)}</div>
             <div className="text-xs text-slate-400">Unavailable</div>
@@ -44,8 +44,8 @@ export const TimeSlot: React.FC<TimeSlotProps> = ({
 
   if (!isAvailableForDuration) {
     return (
-      <div className="relative overflow-hidden rounded-lg border border-red-200 bg-red-50 p-3 sm:p-4">
-        <div className="flex items-center justify-between">
+      <div className="relative overflow-hidden rounded-lg border border-red-200 bg-red-50 p-3 sm:p-4 h-20 sm:h-24">
+        <div className="flex items-center justify-between h-full">
           <div>
             <div className="text-xs sm:text-sm font-medium text-red-700">{formatTime(time)}</div>
             <div className="text-xs text-red-600">
@@ -65,11 +65,11 @@ export const TimeSlot: React.FC<TimeSlotProps> = ({
   return (
     <button
       onClick={onClick}
-      className="group relative w-full overflow-hidden rounded-lg border border-slate-200 bg-white p-3 sm:p-4 shadow-sm transition-all duration-200 hover:border-healthtick-300 hover:shadow-md hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-healthtick-500 focus:ring-offset-2 cursor-pointer"
+      className="group relative w-full overflow-hidden rounded-lg border border-slate-200 bg-white p-3 sm:p-4 shadow-sm transition-all duration-200 hover:border-healthtick-300 hover:shadow-md hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-healthtick-500 focus:ring-offset-2 cursor-pointer h-20 sm:h-24"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-healthtick-50 to-healthtick-100 opacity-0 transition-opacity duration-200 group-hover:opacity-100"></div>
       
-      <div className="relative flex items-center justify-between">
+      <div className="relative flex items-center justify-between h-full">
         <div className="text-left">
           <div className="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-healthtick-900">
             {formatTime(time)}

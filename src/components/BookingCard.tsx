@@ -53,7 +53,7 @@ export const BookingCard: React.FC<BookingCardProps> = ({
   const colors = getColorClasses();
 
   return (
-    <div className={`group relative overflow-hidden rounded-lg border ${colors.border} ${colors.bg} p-3 sm:p-4 shadow-sm transition-all duration-200 hover:shadow-md hover:scale-[1.02]`}>
+    <div className={`group relative overflow-hidden rounded-lg border ${colors.border} ${colors.bg} p-3 sm:p-4 shadow-sm transition-all duration-200 hover:shadow-md hover:scale-[1.02] h-20 sm:h-24`}>
       {/* Accent bar */}
       <div className={`absolute left-0 top-0 h-full w-1 ${colors.accent}`}></div>
       
@@ -68,38 +68,29 @@ export const BookingCard: React.FC<BookingCardProps> = ({
         </svg>
       </button>
 
-      <div className="space-y-2 sm:space-y-3 pr-6 sm:pr-8">
-        {/* Time Range */}
-        <div className="flex items-center space-x-2">
-          <div className={`rounded-full ${colors.badge.split(' ')[0]} p-1 sm:p-1.5`}>
-            <svg className="h-3 w-3 text-current" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="space-y-1 sm:space-y-1.5 pr-6 sm:pr-8">{/* Time Range */}
+        <div className="flex items-center space-x-1.5">
+          <div className={`rounded-full ${colors.badge.split(' ')[0]} p-1`}>
+            <svg className="h-2.5 w-2.5 text-current" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <div className={`text-xs sm:text-sm font-semibold ${colors.text}`}>
+          <div className={`text-xs font-semibold ${colors.text} truncate`}>
             {formatTime(booking.time)} - {formatTime(endTime)}
           </div>
         </div>
 
         {/* Client Information */}
-        <div>
-          <div className={`font-medium ${colors.text} text-sm sm:text-base leading-tight`}>
+        <div className="min-w-0">
+          <div className={`font-medium ${colors.text} text-xs leading-tight truncate`}>
             {client.name}
-          </div>
-          <div className="text-xs text-slate-600 mt-1">
-            {client.phone}
           </div>
         </div>
 
-        {/* Call Type & Duration */}
+        {/* Call Type & Duration - Single line */}
         <div className="flex items-center justify-between">
-          <span className={`inline-flex items-center rounded-full border px-2 sm:px-2.5 py-0.5 sm:py-1 text-xs font-medium ${colors.badge}`}>
+          <span className={`inline-flex items-center rounded-full border px-1.5 py-0.5 text-xs font-medium ${colors.badge} truncate`}>
             {booking.type === 'onboarding' ? 'Onboarding' : 'Follow-up'}
-            {booking.isRecurring && (
-              <svg className="ml-1 h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-              </svg>
-            )}
           </span>
           <span className="text-xs text-slate-500 font-medium">
             {duration}min
