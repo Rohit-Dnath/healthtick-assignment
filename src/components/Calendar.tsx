@@ -233,7 +233,7 @@ export const Calendar: React.FC = () => {
       setBookings(dayBookings);
       setRecurringBookings(recurring);
       
-      alert('✅ Booking deleted successfully!');
+      // alert('✅ Booking deleted successfully!');
     } catch (error) {
       console.error('❌ Error deleting booking:', error);
       alert('❌ Failed to delete booking. Please try again or contact support if the issue persists.');
