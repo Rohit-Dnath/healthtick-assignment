@@ -17,12 +17,12 @@
     }
   ],
   "env": {
-    "VITE_FIREBASE_API_KEY": "@vite_firebase_api_key",
-    "VITE_FIREBASE_AUTH_DOMAIN": "@vite_firebase_auth_domain",
-    "VITE_FIREBASE_PROJECT_ID": "@vite_firebase_project_id",
-    "VITE_FIREBASE_STORAGE_BUCKET": "@vite_firebase_storage_bucket",
-    "VITE_FIREBASE_MESSAGING_SENDER_ID": "@vite_firebase_messaging_sender_id",
-    "VITE_FIREBASE_APP_ID": "@vite_firebase_app_id",
-    "VITE_FIREBASE_MEASUREMENT_ID": "@vite_firebase_measurement_id"
+    "VITE_FIREBASE_API_KEY": "AIzaSyA2yoCTEdSz2wLmb5AvULl67tjIeOc9Osk",
+    "VITE_FIREBASE_AUTH_DOMAIN": "healthtick-calendar-1.firebaseapp.com",
+    "VITE_FIREBASE_PROJECT_ID": "healthtick-calendar-1",
+    "VITE_FIREBASE_STORAGE_BUCKET": "healthtick-calendar-1.firebasestorage.app",
+    "VITE_FIREBASE_MESSAGING_SENDER_ID": "113480018782",
+    "VITE_FIREBASE_APP_ID": "1:113480018782:web:90f161d8d2130cb0fcbdcf",
+    "VITE_FIREBASE_MEASUREMENT_ID": "G-76SLTSQT4Z"
   }
 }
