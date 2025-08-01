@@ -64,7 +64,7 @@ src/
 
 2. **Clone and Install**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Rohit-Dnath/healthtick-assignment
    cd healthtick-calendar
    npm install
    ```
